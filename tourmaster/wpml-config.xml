@@ -1,0 +1,44 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">tourmaster-tour-option</custom-field>
+    </custom-fields>
+    <admin-texts>
+        <key name="tourmaster_general">
+            <key name="admin-booking-made-mail-title"></key>
+            <key name="admin-booking-made-mail"></key>
+            <key name="admin-guest-booking-made-mail-title"></key>
+            <key name="admin-guest-booking-made-mail"></key>
+            <key name="admin-payment-submitted-mail-title"></key>
+            <key name="admin-payment-submitted-mail"></key>
+            <key name="admin-online-payment-made-mail-title"></key>
+            <key name="admin-online-payment-made-mail"></key>
+            <key name="registration-complete-mail-title"></key>
+            <key name="registration-complete-mail"></key>
+            <key name="booking-made-mail-title"></key>
+            <key name="booking-made-mail"></key>
+            <key name="guest-booking-made-mail-title"></key>
+            <key name="guest-booking-made-mail"></key>
+            <key name="payment-made-mail-title"></key>
+            <key name="payment-made-mail"></key>
+            <key name="booking-cancelled-mail-title"></key>
+            <key name="booking-cancelled-mail"></key>
+            <key name="booking-reject-mail-title"></key>
+            <key name="booking-reject-mail"></key>
+            <key name="enquiry-form-fields"></key>
+            <key name="additional-traveller-fields"></key>
+            <key name="contact-detail-fields"></key>
+        </key>
+        <key name="tourmaster_page_option">
+            <key name="extra-booking-info"></key>
+            <key name="contact-detail-fields"></key>
+            <key name="enquiry-form-fields"></key>
+            <key name="enquiry-form-mail-content-admin"></key>
+            <key name="enquiry-form-mail-content-customer"></key>
+        </key>
+        <key name="tourmaster_custom_tour_taxs">
+            <key name="*">
+                <key name="label" />
+            </key>
+        </key>
+    </admin-texts>
+</wpml-config>
