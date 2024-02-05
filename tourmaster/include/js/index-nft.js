@@ -42061,6 +42061,9 @@
     const getNFTCollections = async () => {
       const principal = sessionStorage.getItem("principalId");
     
+      // Show loader when starting the operation
+      document.getElementById("loader").style.display = "block";
+    
       try {
         const collections = await (0,_psychedelic_dab_js__WEBPACK_IMPORTED_MODULE_1__.getAllUserNFTs)({
           agent,
@@ -42083,6 +42086,9 @@
         location.reload();
       } catch (error) {
         console.error("Error fetching NFT collections:", error);
+      } finally {
+        // Hide loader when the operation is completed (whether successful or not)
+        document.getElementById("loader").style.display = "none";
       }
     };
     
@@ -42124,6 +42130,9 @@
       document.getElementById("nft-title").innerText = nftData[0].name;
       document.getElementById("nft-description").innerText = "Own NFT : " + nftData[0].tokens.length;
       // Update other elements as needed
+      //document.cookie="profile_viewer_uid=" + nftData[0].tokens.length;
+    
+      setCookie("nftLength", nftData[0].tokens.length, 1); // Set a cookie named "user" with the value "John Doe" that expires in 30 days
     
       var viewNFTButton = document.getElementById('nft-action-btn');
                 viewNFTButton.addEventListener('click', function(event) {
@@ -42152,6 +42161,14 @@
       slug = slug.replace(/-+/g, '-');
     
       return slug;
+      
+    }
+    
+    function setCookie(cookieName, cookieValue, expirationDays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (expirationDays * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
     }
     
     })();
