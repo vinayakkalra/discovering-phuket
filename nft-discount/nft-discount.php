@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: Qtech nft discount
+ * Plugin Name:  nft discount
  * Plugin URI: 
  * Description: Nft discount for WooCommerce
  * Version: 1.0.0
- * Author: qtech
+ * Author: 
  * Author URI: 
  * Requires PHP: 7.3
- * Text Domain: qtechnftdiscount
+ * Text Domain: nftdiscount
  **/
 //echo $_COOKIE['profile_viewer_uid'];
 
